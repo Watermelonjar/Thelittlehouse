@@ -1,6 +1,3 @@
-[build]
-  functions = "netlify/functions"  # Path to your functions directory
-  publish = "build"  # Your publish directory
 
 [dev]
   framework = "#custom"
