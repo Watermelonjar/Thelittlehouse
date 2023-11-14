@@ -1,3 +1,30 @@
+# netlify.toml
+
+[build]
+  # Define the base directory of your project
+  # (Optional, can be omitted if your project doesn't use a specific subdirectory)
+  base = "."
+
+  # Define the directory with your build commands
+  # In a simple HTML/CSS/JS project, this may not be necessary
+  # But if you have a build script, specify the directory where it should run
+  publish = "public"
+
+  # Command to build your site (if any)
+  # For simple projects, this might just involve copying files to the publish directory
+  command = "echo 'No build command needed'"
+
+# Redirects and rewrites (optional, only if you need specific routing rules)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Custom headers (optional)
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Content-Type = "text/css"
 
 [dev]
   framework = "#custom"
