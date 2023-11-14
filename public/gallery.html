@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Lato:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@600&family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    
+    <nav class="nav_box" id="navbar">
+      <a href="./index.html" class="logo_a"><img src="./images/lilhousenav.png" class="logo" id ="logo"></a>
+        <div class="nav_buttons" id="navbuts">
+            <a class="nav-butbut" href="./index.html">Home</a>
+            <a class="nav-butbut" href="./about.html">About</a>
+            <a class="nav-butbut" href="./History.html">History</a>
+            <a class="nav-butbut" href="./gallery.html">Gallery</a>
+            <a class="nav-butbut" href="./donate.html">Donate</a>
+        </div>
+    </nav>
+    <header class="header" role="banner">
+
+        <nav id="nav" class="nav" role="navigation">
+          
+          <!-- ACTUAL NAVIGATION MENU -->
+          <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <li class="nav__item"><img src="./images/lilhousenav.png" style="height: 5rem;"></li>
+            <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="./history.html" class="nav__link">History</a></li>
+            <li class="nav__item"><a href="./gallery.html" class="nav__link">Gallery</a></li>
+            <li class="nav__item"><a href="./donate.html" class="nav__link">Donate</a></li>
+          </ul>
+          
+          <!-- MENU TOGGLE BUTTON -->
+          <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+              <title>Toggle Menu</title>
+              <g>
+                <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+              </g>
+            </svg>
+          </a>
+          
+          <!-- ANIMATED BACKGROUND ELEMENT -->
+          <div class="splash"></div>
+          
+        </nav>
+        
+      </header>
+    <main>
+      <section class ="slider-container">
+        <h1 class="title-c">Our Mission in Pictures</h1>
+        <div>
+            <div class="center">
+                <div class="carousel-wrapper">
+                  <!-- abstract radio buttons for slides -->
+                  <input id="slide1" type="radio" name="controls" checked="checked" />
+                  <input id="slide2" type="radio" name="controls" />
+                  <input id="slide3" type="radio" name="controls" />
+                  <input id="slide4" type="radio" name="controls" />
+                  <input id="slide5" type="radio" name="controls" />
+              
+                  <!-- navigation dots -->
+                  <label for="slide1" class="nav-dot"></label>
+                  <label for="slide2" class="nav-dot"></label>
+                  <label for="slide3" class="nav-dot"></label>
+                  <label for="slide4" class="nav-dot"></label>
+                  <label for="slide5" class="nav-dot"></label>
+              
+                  <!-- arrows -->
+                  <label for="slide1" class="left-arrow"> < </label>
+                  <label for="slide2" class="left-arrow"> < </label>
+                  <label for="slide3" class="left-arrow"> < </label>
+                  <label for="slide4" class="left-arrow"> < </label>
+                  <label for="slide5" class="left-arrow"> < </label>
+              
+                  <label for="slide1" class="right-arrow"> > </label>
+                  <label for="slide2" class="right-arrow"> > </label>
+                  <label for="slide3" class="right-arrow"> > </label>
+                  <label for="slide4" class="right-arrow"> > </label>
+                  <label for="slide5" class="right-arrow"> > </label>
+              
+                  <div class="carousel">
+                    <ul>
+                      <li>
+                        <img src="./images/main-test.png" />
+                      </li>
+                      <li>
+                        <img src="./images/main.png" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/main_bg_image.png" />
+                      </li>
+                      <li>
+                        <img src="./images/main_bg.png">
+                      </li>
+                      <li>
+                        <img src="./images/aboutimg2.png" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <section class="images-container">
+        <div class="gallery-image">
+            <div class="img-box">
+                <img src="./galler/2.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/1.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/3.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/4.png"  alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/5.png"  alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/6.png"  alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/7.png"  alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/8.png"  alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/9.png"  alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/10.png"  alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/11.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/12.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/13.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+              </div>
+            <div class="img-box">
+                <img src="./galler/14.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+            </div>
+            <div class="img-box">
+                <img src="./galler/15.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+            </div>
+            <div class="img-box">
+                <img src="./galler/16.png" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>caption</p>
+                    <p class="opacity-low">brief description Design</p>
+                  </div>
+                </div> 
+            </div>
+             
+        </div>
+      </section>
+      <div class="last-bottom">
+        <p class="quote-bottom"> 
+            "A world where 333 million children live in extreme poverty- deprived not only of basic needs but also dignity, opportunity or hope is simply intolerable. It is more critical than ever that all children have a clear pathway out of poverty-through equitable access to quality education, nutrition, health, and social protection, as well as safety and security. This report should be a stark reminder that we have no time to lose in the fight against poverty and inequality, and that children must be foremost in our efforts."
+        </p>
+        <img src="./images/mdi_love.png" class="vec-img">
+        </div>
+      <div class="footer" id ="footer">
+        <div class="footerdiv">
+          <img class = "footer-logo" src="images/lilhousenavw.png">
+          <div class="social-icons">
+              <a class ="social-text" href="https://www.instagram.com/thelittlehouse.jkt/" target="_blank"><img src="./images/insta.png" class="logoig"></a>
+          </div>
+          <p>Copyright 2023 by Thelittlehouse.jkt. All rights reserved</p>
+        </div>
+        <div class="footerdiv">
+          <h3 style="font-family: 'Poppins';">Contact us</h3>
+          <div>
+            <p>+62 819 7678989</p>
+            <p>example@gmail.com</p>
+          </div>
+        </div>
+    </div>
+    </main>
+   
+	<script src="./script.js"></script>
+  </body>
+</html>

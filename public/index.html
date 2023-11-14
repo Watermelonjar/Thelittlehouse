@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TheLittleHouse</title>
+    <meta name="description" content= "non profit organization aiming for the freedom of education" >
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lato:wght@700&family=Poppins:wght@600&family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    
+    <nav class="nav_box" id="navbar">
+      <a href="./index.html" class="logo_a"><img src="./images/lilhousenav.png" class="logo" id ="logo"></a>
+        <div class="nav_buttons" id="navbuts">
+            <a class="nav-butbut" href="./index.html">Home</a>
+            <a class="nav-butbut" href="./about.html">About</a>
+            <a class="nav-butbut" href="./History.html">History</a>
+            <a class="nav-butbut" href="./gallery.html">Gallery</a>
+            <a class="nav-butbut" href="./donate.html">Donate</a>
+        </div>
+    </nav>
+    <header class="header" role="banner">
+
+      <nav id="nav" class="nav" role="navigation">
+        
+        <!-- ACTUAL NAVIGATION MENU -->
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+          <li class="nav__item"><img src="./images/lilhousenav.png" style="height: 5rem;" class="menulogo1"></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="./history.html" class="nav__link">History</a></li>
+          <li class="nav__item"><a href="./gallery.html" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="./donate.html" class="nav__link">Donate</a></li>
+        </ul>
+        
+        <!-- MENU TOGGLE BUTTON -->
+        <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+          <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+        
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+        
+      </nav>
+  </header>
+    <main>
+      <section class = "main-pagesec" id="main-pagesec">
+        <img src="{% static 'images//lilhousenavw.png' %}" class="logom" id ="logo">
+        <div class = "main-quote" id ="main-quote">
+            <h1 class ="slogan">We are TheLittleHouse</h1>
+            <h3 class ="underslogan">A learning center to help those who are in need</h3>
+            <a class="donate_button" href="./donate.html">Donate</a>
+        </div>
+      </section>
+      <div class="footer" id ="footer">
+        <div class="footerdiv">
+          <img class = "footer-logo" src="images/lilhousenavw.png">
+          <div class="social-icons">
+              <a class ="social-text" href="https://www.instagram.com/thelittlehouse.jkt/" target="_blank"><img src="./images/insta.png" class="logoig"></a>
+          </div>
+          <p>Copyright 2023 by Thelittlehouse.jkt. All rights reserved</p>
+        </div>
+        <div class="footerdiv">
+          <h3 style="font-family: 'Poppins';">Contact us</h3>
+          <div>
+            <p>+62 819 7678989</p>
+            <p>example@gmail.com</p>
+          </div>
+        </div>
+    </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
