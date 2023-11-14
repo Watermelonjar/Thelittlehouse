@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "cp -R src/* public/",
     "start": "node server.js"
   },
   "dependencies": {
