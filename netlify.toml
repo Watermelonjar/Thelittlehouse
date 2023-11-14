@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"  # Your build command
+  functions = "netlify/functions"  # Path to your functions directory
+  publish = "build"  # Your publish directory
+
+[dev]
+  framework = "#custom"
+  command = "npm run start"  # Command to start your local dev server
+  targetPort = 3000  # The port of your Express app
+  port = 8888  # Port for Netlify Dev
+
